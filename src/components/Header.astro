@@ -1,0 +1,20 @@
+---
+import { phone } from "@/data/informations"
+import { Icon } from "astro-icon/components"
+import Container from "./Container.astro"
+import Logo from "./Logo.astro"
+import Menu from "./Menu.astro"
+---
+
+<header class="py-5 bg-white">
+	<Container class="flex items-center justify-between gap-x-3">
+		<Logo />
+		<Menu />
+		<a
+			href={`tel:${phone.tel}`}
+			target="_blank"
+			class="font-medium hidden md:flex gap-1 hover:text-blue-600 transition-colors duration-75 items-center text-blue-500 underline underline-offset-4"
+			><Icon name="mdi:phone" /><span>{phone.label}</span></a
+		>
+	</Container>
+</header>
