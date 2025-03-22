@@ -3,7 +3,7 @@ import Layout from "@/layouts/Layout.astro"
 import { Image } from "astro:assets"
 
 import howo_img from "@/assets/images/howo.png"
-import { cta, services, uslugi } from "@/data/informations"
+import { cta, pochemy_mi, uslugi } from "@/data/informations"
 import { Icon } from "astro-icon/components"
 ---
 
@@ -66,7 +66,7 @@ import { Icon } from "astro-icon/components"
 		</div>
 	</div>
 	<div class="p-8 bg-white flex flex-wrap gap-8 rounded-xl w-full">
-		{
+		<!-- {
 			services &&
 				services.map(item => (
 					<p class="px-5 py-2 flex gap-2 items-center border-[0.5px] border-zinc-200 bg-zinc-50 rounded-lg">
@@ -74,6 +74,32 @@ import { Icon } from "astro-icon/components"
 						<span class="text-green-600">{item.price}</span>
 					</p>
 				))
-		}
+		} -->
+
+		<h2 class="heading-h2">Почему выбирают BIG HOWO KZ?</h2>
+
+		<ul class="text-xl text-zinc-600 leading-relaxed">
+			{pochemy_mi && pochemy_mi.map(item => <li>{item.text}</li>)}
+		</ul>
+	</div>
+
+	<div class="p-8 bg-white flex flex-wrap gap-8 rounded-xl w-full">
+		<h2 class="heading-h2">География работы</h2>
+		<p class="text-xl text-zinc-600 leading-relaxed">
+			Мы работаем по всему <b>Казахстану</b>, обеспечивая грузоперевозки в <b>Алматы</b>, <b
+				>Астане</b
+			> и других регионах страны. В зависимости от объема заказа возможны междугородние перевозки
+			на дальние расстояния.
+		</p>
+		<h2 class="heading-h2">Как сделать заказ?</h2>
+		<p class="p">
+			Связаться с нами можно по <b>телефону</b> или через <b>мессенджеры</b>. Мы
+			оперативно обработаем заявку, согласуем детали и предложим оптимальные условия
+			доставки.
+		</p>
+		<p class="p">
+			<b>BIG HOWO KZ</b> – это надежный партнер в сфере грузоперевозок. Доверьте нам свои грузы,
+			и мы доставим их в нужное место вовремя и без проблем!
+		</p>
 	</div>
 </Layout>

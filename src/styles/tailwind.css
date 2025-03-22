@@ -34,4 +34,7 @@
   .heading-h3 {
     @apply text-xl text-zinc-600 font-medium;
   }
+  .p{
+    @apply text-xl text-zinc-600 leading-relaxed;
+  }
 }

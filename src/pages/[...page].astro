@@ -14,10 +14,7 @@ const { Content } = await render(page)
 ---
 
 <Layout {...page.data} ogImage={page.data.ogImage?.src}>
-	<h1 class="">
-		{page.data.title}
-	</h1>
-	<main class="">
+	<main class="prose-lg prose-ul:list-disc prose-ol:list-decimal xl:prose-xl prose-blue">
 		<Content />
 	</main>
 </Layout>
