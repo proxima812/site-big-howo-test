@@ -7,7 +7,7 @@ function DeliveryCalculator() {
 
 	const calculateDeliveryCost = () => tons * km * costPerTonKm
 
-	const whatsappLink = `https://wa.me/77074989953?text=Здравствуйте!%20Хочу%20оставить%20заявку.%20Доставка%20груза%20${tons}%20тонн,%20${km}%20км. Итоговая сумма:%20${calculateDeliveryCost()}%20тенге.`
+	const whatsappLink = `https://wa.me/77710686848?text=Здравствуйте!%20Хочу%20оставить%20заявку.%20Доставка%20груза%20${tons}%20тонн,%20${km}%20км. Итоговая сумма:%20${calculateDeliveryCost()}%20тенге.`
 
 	return (
 		<div className="bg-white p-8 rounded-xl">
